@@ -1,5 +1,5 @@
+import niveles.*
 import wollok.game.*
-import hector.*
 import cultivos.*
 
 program farmville {
@@ -8,14 +8,9 @@ program farmville {
 	game.height(10)
 	game.width(10)
 	game.ground("ground.png")
-
-	//  VISUALES
- 	game.addVisualCharacter(hector)
+	
+	menu.iniciar()
  	
-	//	TECLAS
-	keyboard.m().onPressDo({ hector.plantaMaiz() })
-	keyboard.r().onPressDo({ hector.rega() })
-
- 	//  COMIENZA
+	//  COMIENZA
 	game.start()
 }
