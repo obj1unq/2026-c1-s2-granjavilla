@@ -33,8 +33,12 @@ object menu {
 object nivel {
   method iniciar() {
     game.addVisualCharacter(personaje)
-    
+    // game.addVisual(cartelDeOro)
+    game.addVisual(decena)
+    game.addVisual(unidad)
+
     keyboard.m().onPressDo({ personaje.plantaMaiz() })
     keyboard.r().onPressDo({ personaje.rega() })
+    keyboard.c().onPressDo({ personaje.cosechaTodo() })
   }
 }

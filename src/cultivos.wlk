@@ -11,4 +11,6 @@ class Maiz {
 	method regate() {
 		esAdulta = true
 	}
+
+	method precio() = if (esAdulta) 10 else 1
 }

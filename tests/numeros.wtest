@@ -1,0 +1,15 @@
+import src.personaje.*
+
+describe "Números" {
+  method initialize() {
+    personaje.oro(12)
+  }
+  
+  test "decenas" {
+    assert.equals(1, decena.numero())
+  }
+  
+  test "unidades" {
+    assert.equals(2, unidad.numero())
+  }
+}
